@@ -70,7 +70,7 @@ export function CardsChat() {
 
   return (
     <>
-      <Card>
+      <Card className="min-h-[calc(100vh-150px)] flex flex-col justify-between">
         <CardHeader className="flex flex-row items-center">
           <div className="flex items-center space-x-4">
             <Avatar>
