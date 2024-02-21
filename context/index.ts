@@ -7,21 +7,66 @@ export interface LocationType {
   description: string;
   AverageBudget: number;
   img?: string;
+  travel_options?: TravelOptions;
 }
 
+export interface waytotravel{
+  mode: string;
+  name: string;
+  type: string;
+  price: string;
+  duration: string;
+  marker: string;
+}
+export interface TravelOptions {
+  from: string;
+  to: string;
+  distance: string;
+  waytotravel: waytotravel[];
+  
+
+}
 export const location: LocationType[] = [
   {
-    name: "Taj Mahal",
-    slug: "taj-mahal",
-    id: "tjm",
-    city: "Agra",
-    state: "Uttar Pradesh",
-    description:
-      "An iconic white marble mausoleum, a symbol of love and one of the Seven Wonders of the World.",
-    AverageBudget: 45000,
-    img: "https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
+    "name": "Taj Mahal",
+    "slug": "taj-mahal",
+    "id": "tjm",
+    "city": "Agra",
+    "state": "Uttar Pradesh",
+    "description": "An iconic white marble mausoleum, a symbol of love and one of the Seven Wonders of the World.",
+    "AverageBudget": 45000,
+    "img": "https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+   
+    "travel_options":  {
+      "from": "Delhi",
+      "to": "Taj Mahal",
+      "distance": "233 km",
+      "waytotravel": [
+      { "mode": "train",
+      "marker": "🚂",
+        "name": "Indian Railways",
+        "type": "Express Train",
+        "price": "700",
+        "duration": "2.5 hours",
+       
+      },
+       { "mode": "bus",
+       "marker": "🚌",
+        "name": "State Transport Bus",
+        "type": "AC Deluxe",
+        "price": "500",
+        "duration": "4 hours"
+      },
+       { "mode": "Rishaw",
+       "marker": "🛺",
+        "name": "Local Rishaw",
+        "type": "E-rickshaw",
+        "price": "40",
+        "duration": "1 hours"
+      }
+      ]
+  }} ,
+  { 
     name: "Red Fort",
     slug: "red-fort",
     id: "rfr",
