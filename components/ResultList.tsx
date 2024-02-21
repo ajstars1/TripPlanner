@@ -3,11 +3,12 @@
 
 import Image from "next/image";
 import { ScrollArea } from "./ui/scroll-area";
+import Link from "next/link";
 
 
 export function ResultList({ items, result }: any) {
   let output = items
-  console.log(result.locationAuto)
+  // console.log(result.locationAuto)
   if (result.locationAuto == false && result.BudgetAuto == false) {
     output = items.filter((lc: any) => lc.id === result.location);
   }
@@ -23,7 +24,8 @@ export function ResultList({ items, result }: any) {
     <ScrollArea className="h-[80vh]">
       <div className="flex flex-col gap-2 p-4 pt-0">
         {output.map((item: any) => (
-          <button
+          <Link
+            href={`/go/${item.slug}`}
             key={item.id}
             className={
               "flex flex-col items-start justify-center gap-2 rounded-lg border p-3 text-left text-sm transition-all hover:bg-accent"
@@ -47,7 +49,7 @@ export function ResultList({ items, result }: any) {
             <div className="line-clamp-2 text-xs text-muted-foreground">
               {item.description.substring(0, 300)}
             </div>
-          </button>
+          </Link>
         ))}
       </div>
     </ScrollArea>

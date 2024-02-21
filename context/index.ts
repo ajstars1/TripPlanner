@@ -1,5 +1,6 @@
 export interface LocationType {
   name: string;
+  slug?: string;
   id: string;
   city?: string;
   state: string;
@@ -11,6 +12,7 @@ export interface LocationType {
 export const location: LocationType[] = [
   {
     name: "Taj Mahal",
+    slug: "taj-mahal",
     id: "tjm",
     city: "Agra",
     state: "Uttar Pradesh",
@@ -21,6 +23,7 @@ export const location: LocationType[] = [
   },
   {
     name: "Red Fort",
+    slug: "red-fort",
     id: "rfr",
     city: "Delhi",
     state: "Delhi",
@@ -31,6 +34,7 @@ export const location: LocationType[] = [
   },
   {
     name: "Golden Temple",
+    slug: "golden-temple",
     id: "gld",
     city: "Amritsar",
     state: "Punjab",
@@ -41,6 +45,7 @@ export const location: LocationType[] = [
   },
   {
     name: "Amer Fort",
+    slug: "amer-fort",
     id: "afr",
     city: "Jaipur",
     state: "Rajasthan",
@@ -51,6 +56,7 @@ export const location: LocationType[] = [
   },
   {
     name: "Hawa Mahal",
+    slug: "hawa-mahal",
     id: "hmh",
     city: "Jaipur",
     state: "Rajasthan",
@@ -61,6 +67,7 @@ export const location: LocationType[] = [
   },
   {
     name: "Goa",
+    slug: "goa",
     id: "goa",
     state: "Goa",
     description:
@@ -70,6 +77,7 @@ export const location: LocationType[] = [
   },
   {
     name: "Kerala",
+    slug: "kerala",
     id: "ker",
     state: "Kerala",
     description:
@@ -79,6 +87,7 @@ export const location: LocationType[] = [
   },
   {
     name: "Ladakh",
+    slug: "ladakh",
     id: "lad",
     state: "Ladakh",
     description:
@@ -88,6 +97,7 @@ export const location: LocationType[] = [
   },
   {
     name: "Coorg",
+    slug: "coorg",
     id: "cor",
     state: "Karnataka",
     description:
@@ -97,6 +107,7 @@ export const location: LocationType[] = [
   },
   {
     name: "Manali",
+    slug: "manali",
     id: "man",
     state: "Himachal Pradesh",
     description:
@@ -106,6 +117,7 @@ export const location: LocationType[] = [
   },
   {
     name: "Varanasi",
+    slug: "varanasi",
     id: "var",
     state: "Uttar Pradesh",
     description:
@@ -115,6 +127,7 @@ export const location: LocationType[] = [
   },
   {
     name: "Rajasthan",
+    slug: "rajasthan",
     id: "raj",
     state: "Rajasthan",
     description:
@@ -124,6 +137,7 @@ export const location: LocationType[] = [
   },
   {
     name: "Udaipur",
+    slug: "udaipur",
     id: "udp",
     state: "Rajasthan",
     description:
@@ -133,6 +147,7 @@ export const location: LocationType[] = [
   },
   {
     name: "Darjeeling",
+    slug: "darjeeling",
     id: "drj",
     state: "West Bengal",
     description:
@@ -142,6 +157,7 @@ export const location: LocationType[] = [
   },
   {
     name: "Shimla",
+    slug: "shimla",
     id: "shm",
     state: "Himachal Pradesh",
     description:
@@ -151,6 +167,7 @@ export const location: LocationType[] = [
   },
   {
     name: "Nainital",
+    slug: "nainital",
     id: "nin",
     state: "Uttarakhand",
     description:
@@ -160,6 +177,7 @@ export const location: LocationType[] = [
   },
   {
     name: "Munnar",
+    slug: "munnar",
     id: "mun",
     state: "Kerala",
     description:
@@ -169,6 +187,7 @@ export const location: LocationType[] = [
   },
   {
     name: "Kashmir",
+    slug: "kashmir",
     id: "kas",
     state: "Jammu and Kashmir",
     description: "A region known for its breathtaking natural beauty,",
@@ -177,6 +196,7 @@ export const location: LocationType[] = [
   },
   {
     name: "Rishikesh",
+    slug: "rishikesh",
     id: "rsk",
     state: "Uttarakhand",
     description:
@@ -186,6 +206,7 @@ export const location: LocationType[] = [
   },
   {
     name: "Khajuraho",
+    slug: "khajuraho",
     id: "kha",
     state: "Madhya Pradesh",
     description:
@@ -195,6 +216,7 @@ export const location: LocationType[] = [
   },
   {
     name: "Ajanta and Ellora Caves",
+    slug: "ajanta-and-ellora-caves",
     id: "aec",
     state: "Maharashtra",
     description:
@@ -204,6 +226,7 @@ export const location: LocationType[] = [
   },
   {
     name: "Hampi",
+    slug: "hampi",
     id: "hmp",
     state: "Karnataka",
     description:
@@ -213,6 +236,7 @@ export const location: LocationType[] = [
   },
   {
     name: "Sunderbans National Park",
+    slug: "sunderbans-national-park",
     id: "snd",
     state: "West Bengal",
     description:
