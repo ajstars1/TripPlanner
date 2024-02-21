@@ -18,22 +18,22 @@ export function MainNav({
         Overview
       </Link>
       <Link
-        href="/"
+        href="/ai-adviser"
         className="font-medium text-muted-foreground transition-colors hover:text-primary"
       >
-        Customers
+        AI Adviser
       </Link>
       <Link
         href="/"
         className="font-medium text-muted-foreground transition-colors hover:text-primary"
       >
-        Products
+        About
       </Link>
       <Link
         href="/"
         className="font-medium text-muted-foreground transition-colors hover:text-primary"
       >
-        Settings
+        Contact
       </Link>
     </nav>
   );
