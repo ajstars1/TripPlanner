@@ -18,7 +18,7 @@ const Page = ({ params }: { params: { place: string } }) => {
             fill
             className="rounded-md object-cover"
           />
-          <div className="absolute bottom-2 left-2">
+          <div className="absolute bottom-0 py-2 left-0 pl-4  backdrop-blur-sm rounded-md w-full">
             <h1 className="text-4xl mb-2 text-slate-100">
               Go to{" "}
               <span className="font-semibold text-slate-50">
@@ -36,6 +36,7 @@ const Page = ({ params }: { params: { place: string } }) => {
                 </ul> */}
 
           <RoadmapPage trainO={trainO}/>
+
         </main>
       </section>
     );
