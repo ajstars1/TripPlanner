@@ -22,7 +22,10 @@ const MobileNav = ({className
           <SheetContent side={"left"}>
             <SheetHeader>
               <SheetTitle className="text-2xl flex justify-center underline-offset-2">
-                AirBee <FaFly className="text-2xl" />
+                <link href="/">
+                Airbee
+                </link>
+                 <FaFly className="text-2xl" />
               </SheetTitle>
               <SheetDescription>
                 <MainNav className="flex-col text-2xl gap-6 !space-x-0 mt-10" />
