@@ -6,21 +6,20 @@ import { FaFly } from "react-icons/fa";
 
 const Navbar = async () => {
     return (
-      <div>
-        <div className="border-b">
-          <div className="flex h-16 justify-between items-center px-4">
-            <MobileNav className="lg:hidden flex" />
-            <span className="flex">
-            <h1 className="text-4xl">AirBee</h1>
-            <FaFly className="text-4xl" />
-            </span>
-            <MainNav className="mx-6 hidden lg:flex" />
-            <div className="flex items-center space-x-4">
-              <Search className="hidden lg:flex" />
-            </div>
-          </div>
+      <div className="border-b">
+      <div className="flex h-16 justify-between items-center px-4 lg:px-8">
+        <MobileNav className="lg:hidden flex" />
+        <span className="flex items-center">
+          <h1 className="text-4xl mr-2">AirBee</h1>
+          <FaFly className="text-4xl" />
+        </span>
+        <MainNav className="hidden lg:flex flex-grow justify-center" />
+        <div className="hidden lg:flex items-center space-x-4">
+          <Search />
         </div>
       </div>
+    </div>
+    
     );
 }
  
