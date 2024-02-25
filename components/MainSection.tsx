@@ -25,6 +25,7 @@ import { addDays } from "date-fns";
 import { toast } from "./ui/use-toast";
 import { Switch } from "./ui/switch";
 import { useState } from "react";
+import Hero from "./hero";
 
 const FormSchema = z
   .object({
@@ -106,6 +107,10 @@ const MainSection = () => {
     // console.log(JSON.stringify(result, null, 2));
   }
   return (
+    <section>
+<div>
+  <Hero />
+</div>
     <section className="flex flex-wrap-reverse md:flex-nowrap justify-center items-center p-5 md:p-14 bg-gray-50 ">
       <div className="Left w-full  bg-slate-50 flex justify-center p-10">
         <ResultList items={location} result={result} />
@@ -133,15 +138,15 @@ const MainSection = () => {
                           </FormLabel>
                           {isLocationAuto ? (
                             <Button
-                              disabled
-                              variant="outline"
-                              className="text-green-700"
+                            disabled
+                            variant="outline"
+                            className="text-green-700"
                             >
                               Automatic
                             </Button>
                           ) : (
                             <LocationSelect field={field} />
-                          )}
+                            )}
                         </div>
                         <FormMessage />
                       </FormItem>
@@ -157,7 +162,7 @@ const MainSection = () => {
                             checked={field.value}
                             onCheckedChange={field.onChange}
                             id="locationAuto"
-                          />
+                            />
                           <FormLabel>Auto</FormLabel>
                         </div>
                         <FormMessage />
@@ -179,22 +184,22 @@ const MainSection = () => {
                               disabled
                               variant="outline"
                               className="text-green-700"
-                            >
+                              >
                               Automatic
                             </Button>
                           ) : (
                             <Input
-                              id="name"
-                              type="number"
-                              placeholder="5000 ₹"
-                              {...field}
+                            id="name"
+                            type="number"
+                            placeholder="5000 ₹"
+                            {...field}
                             />
-                          )}
+                            )}
                         </div>
                         <FormMessage />
                       </FormItem>
                     )}
-                  />
+                    />
                   <FormField
                     control={form.control}
                     name="BudgetAuto"
@@ -211,7 +216,7 @@ const MainSection = () => {
                         <FormMessage />
                       </FormItem>
                     )}
-                  />
+                    />
 
                   <FormField
                     control={form.control}
@@ -227,12 +232,12 @@ const MainSection = () => {
                               disabled
                               variant="outline"
                               className="text-green-700"
-                            >
+                              >
                               Automatic
                             </Button>
                           ) : (
                             <DatePicker field={field} />
-                          )}
+                            )}
                         </div>
                         <FormMessage />
                       </FormItem>
@@ -248,7 +253,7 @@ const MainSection = () => {
                             checked={field.value}
                             onCheckedChange={field.onChange}
                             id="DateAuto"
-                          />
+                            />
                           <FormLabel>Auto</FormLabel>
                         </div>
                         <FormMessage />
@@ -263,6 +268,7 @@ const MainSection = () => {
         </Card>
       </div>
     </section>
+  </section>
   );
 };
 
